@@ -12,5 +12,6 @@ export CHECKERFRAMEWORK=$ROOT/checker-framework
 
 ## Obtain daikon
 (cd $ROOT && git clone https://github.com/codespecs/daikon.git)
+make -C $ROOT/daikon/java compile dyncomp-jdk daikon.jar
 
 make -C $ROOT/daikon/java check-signature
